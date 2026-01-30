@@ -1,0 +1,57 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+---
+
+<MainLayout currentPath="/projects" title="Projects · Romain-Rolland F Tohouri">
+  <section class="section">
+    <div class="section-header">
+      <h1 class="section-title">Selected projects</h1>
+      <p class="section-subtitle">
+        A few representative initiatives showcasing digital health architecture, DevOps, and interoperability
+        work.
+      </p>
+    </div>
+    <div class="card-grid">
+      <article class="card">
+        <h2 class="card-title"> <a href="https://yalim.cloud" target="_blank" rel="noreferrer">YaLIM Cloud / dhis2.cloud</a></h2>
+        <p class="card-meta">Multi-tenant DHIS2 hosting platform</p>
+        <p class="card-meta">
+          Designed and operated a Talos Linux-based Kubernetes platform hosting multiple national DHIS2
+          instances with automated scaling, monitoring, and backup.
+        </p>
+        <div class="card-tags">
+          <span class="tag">Kubernetes</span>
+          <span class="tag">Talos Linux</span>
+          <span class="tag">DHIS2</span>
+          <span class="tag">CI/CD</span>
+        </div>
+      </article>
+      <article class="card">
+        <h2 class="card-title">One Health Information Systems</h2>
+        <p class="card-meta">Burkina Faso, Liberia, and others</p>
+        <p class="card-meta">
+          Led architectures and implementations for One Health platforms integrating human, animal, and
+          environmental data to improve surveillance and response.
+        </p>
+        <div class="card-tags">
+          <span class="tag">One Health</span>
+          <span class="tag">Interoperability</span>
+          <span class="tag">Enterprise architecture</span>
+        </div>
+      </article>
+      <article class="card">
+        <h2 class="card-title">AI-powered DHIS2 insights</h2>
+        <p class="card-meta">Bulletins and dashboards</p>
+        <p class="card-meta">
+          Built AI agents and pipelines that generate automated analytics bulletins and dashboards from DHIS2
+          data for faster decision-making.
+        </p>
+        <div class="card-tags">
+          <span class="tag">AI</span>
+          <span class="tag">LLMs</span>
+          <span class="tag">Data storytelling</span>
+        </div>
+      </article>
+    </div>
+  </section>
+</MainLayout>
