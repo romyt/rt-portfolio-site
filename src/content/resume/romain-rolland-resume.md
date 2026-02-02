@@ -1,8 +1,7 @@
 # **Romain-Rolland F Tohouri**
 
 Fairfax VA  
-+1(571)6999608  
-[romain@tohouri.com](mailto:romain@tohouri.com)
+USA
 
 **SUMMARY**  
 Digital health leader with 15+ years of international development experience across Africa, the United States, and the Caribbean. Skilled in health information systems strengthening, digital health strategy development, institutional capacity building, systems interoperability, artificial intelligence, and cybersecurity. Extensive expertise in managing the deployment and enhancement of open source-based health information, logistics, and electronic health record systems at the national level across eight countries. Proven ability to develop and implement innovative digital health solutions while fostering mentorship, multi-stakeholder collaboration, and delivering sustainable, impactful results. Strong communication, teamwork, and project management skills.
@@ -13,14 +12,14 @@ Digital health leader with 15+ years of international development experience acr
 * Health Information Systems Development and Information System Security  
 * Digital Health Strategy Development and Stakeholder Engagement and Collaboration  
 * AI and Local LLM (Large Language Models) Integration  
-* DevOps Engineering and DHIS2 (District Health Information Software 2) Deployment and Optimization  
+* DevOps Engineering / DHIS2 (District Health Information Software 2) and other open soucre health information systems deployment and dptimization
 * Capacity Building and Knowledge Transfer  
 * Advanced Data Analysis and Visualization
 
 **EMPLOYMENT HISTORY**
 
 **Board Director**  
-HISP Côte d'Ivoire | Abidjan, Côte d’Ivoire| 01/2015 — Present   
+HISP Côte d'Ivoire | Abidjan, Côte d’Ivoire| 01/2015 — Present _(Turnover ~ $600,000 -$1,000,000)_  
 - Leading national health system strengthening efforts in Côte d’Ivoire.
 
 * Providing leadership and guidance to Côte d’Ivoire’s Ministry of Health (MOH).  
@@ -28,16 +27,16 @@ HISP Côte d'Ivoire | Abidjan, Côte d’Ivoire| 01/2015 — Present
 * Overseeing Global Fund-funded digital health activities for the MOH.
 
 **Manager and Lead DevOps Engineer**  
-YaLIM LLC | Fairfax, Virginia 09/01/2022 — Present  
-Implemented high availability clusters and CI/CD (Continuous Integration / Continuous Delivery) pipelines.
+YaLIM LLC _(yalim.org)_ | Fairfax, Virginia 09/01/2022 — Present  
+- Implemented high availability clusters and CI/CD (Continuous Integration / Continuous Delivery) pipelines.
 
 * Deployed a Talos Linux based high availability production-grade cluster using Kubernetes, hosting 7 scalable routine health information systems (HIS) and a national disease surveillance information systems in the cloud and on premise  
 * Developed and deployed the “YaLIM cloud” software as service electronic platform (yalim.cloud or dhis2.cloud)   
-* Created AI-powered DHIS2 bulletins and dashboards and AI agents for efficient health information sharing.
+* Created AI-powered DHIS2 bulletins and dashboards for efficient health information sharing.
 
 **Lead Architect**  
-MOMENTUM Knowledge Accelerator (MKA) | Arlington, VA | 01/2022 — 05/2025   
-$30-million USAID cooperative agreement - Designed system architecture for collecting and managing MOMENTUM awards data 
+MOMENTUM Knowledge Accelerator (MKA) | Arlington, VA | 01/2022 — 05/2025 _($30-million USAID cooperative agreement)_ 
+- Designed system architecture for collecting and managing MOMENTUM awards data 
 
 * Supported Momentum awards and MKA (MOMENTUM KNOWLEDGE ACCELERATOR) Monitoring and Evaluation (M&E) teams   
 * Led the design and implementation of the integrated MKA Information system architecture integrating heterogeneous external systems using an interoperability layer  
@@ -48,7 +47,7 @@ JSI at Center for Digital Health| Arlington, VA | 01/2019 — 02/2025
 - Managed DHIS2 and Developer Groups for JSI (John Snow Inc.) projects 
 
 * Implemented JSI Head Quarter ECHO DHIS2 platform   
-* Led Burkina Faso CHISU ($200 million USAID’s flagship data and information system project, designed to strengthen health information systems in low- and middle-income countries) team in One Health System implementation   
+* Led Burkina Faso CHISU _($200 million USAID’s flagship data and information system project, designed to strengthen health information systems in low- and middle-income countries)_ team in One Health System implementation   
 * Assisted Niger in conducting ICT (Information Communication and Technology) Infrastructure assessment   
 * Led Niger's National Digital Health blueprint and National interoperability standard documents development and supported establishment of the national digital health steering committee  
 * Assessed Haiti national health information servers security posture against CIS benchmarks and various security standards such as NIST 800-53 (The US National Institute of Standards and Technology cybersecurity standard) and GDPR (General Data Protection Regulation)

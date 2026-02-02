@@ -1,0 +1,57 @@
+---
+import MainLayout from "../../layouts/MainLayout.astro";
+---
+
+<MainLayout currentPath="/fr/projects">
+  <section class="section">
+    <div class="section-header">
+      <h1 class="section-title">Projets sélectionnés</h1>
+      <p class="section-subtitle">
+        Quelques initiatives représentatives présentant l'architecture de santé numérique, le DevOps et le travail
+        d'interopérabilité.
+      </p>
+    </div>
+    <div class="card-grid">
+      <article class="card">
+        <h2 class="card-title">YaLIM Cloud / dhis2.cloud</h2>
+        <p class="card-meta">Plateforme d'hébergement DHIS2 multi-tenant</p>
+        <p class="card-meta">
+          Conception et exploitation d'une plateforme Kubernetes basée sur Talos Linux hébergeant plusieurs instances
+          DHIS2 nationales avec mise à l'échelle automatisée, surveillance et sauvegarde.
+        </p>
+        <div class="card-tags">
+          <span class="tag">Kubernetes</span>
+          <span class="tag">Talos Linux</span>
+          <span class="tag">DHIS2</span>
+          <span class="tag">CI/CD</span>
+        </div>
+      </article>
+      <article class="card">
+        <h2 class="card-title">Systèmes d'Information One Health</h2>
+        <p class="card-meta">Burkina Faso, Libéria et autres</p>
+        <p class="card-meta">
+          Direction des architectures et implémentations de plateformes One Health intégrant les données humaines, animales et
+          environnementales pour améliorer la surveillance et la réponse.
+        </p>
+        <div class="card-tags">
+          <span class="tag">One Health</span>
+          <span class="tag">Interopérabilité</span>
+          <span class="tag">Architecture d'entreprise</span>
+        </div>
+      </article>
+      <article class="card">
+        <h2 class="card-title">Insights DHIS2 alimentés par l'IA</h2>
+        <p class="card-meta">Bulletins et tableaux de bord</p>
+        <p class="card-meta">
+          Construction d'agents IA et de pipelines générant automatiquement des bulletins analytiques et des tableaux de bord à partir
+          des données DHIS2 pour une prise de décision plus rapide.
+        </p>
+        <div class="card-tags">
+          <span class="tag">IA</span>
+          <span class="tag">LLMs</span>
+          <span class="tag">Narration de données</span>
+        </div>
+      </article>
+    </div>
+  </section>
+</MainLayout>

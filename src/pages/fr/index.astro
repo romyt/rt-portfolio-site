@@ -1,0 +1,167 @@
+---
+import MainLayout from "../../layouts/MainLayout.astro";
+import { useTranslations } from '../../i18n/ui';
+import Resume from "../../content/resume/romain-rolland-resume-fr.md";
+
+const t = useTranslations('fr');
+---
+
+<MainLayout currentPath="/fr/">
+  <section class="hero">
+    <div>
+      <div class="hero-eyebrow">{t('hero.eyebrow')}</div>
+      <h1 class="hero-title">
+        {t('hero.title.part1')}
+        <span class="hero-highlight">{t('hero.title.highlight')}</span>
+        {t('hero.title.part2')}
+      </h1>
+      <p class="hero-subtitle">
+        {t('hero.subtitle')}
+      </p>
+      <div class="hero-actions">
+        <a href="#resume" class="button-primary">{t('hero.cta.resume')}</a>
+        <a href="/fr/projects" class="button-secondary">{t('hero.cta.projects')}</a>
+      </div>
+      <div class="hero-meta">
+        <span><strong>{t('hero.meta.years')}</strong> {t('hero.meta.years.desc')}</span>
+        <span><strong>{t('hero.meta.countries')}</strong> {t('hero.meta.countries.desc')}</span>
+        <span><strong>{t('hero.meta.systems')}</strong> {t('hero.meta.systems.desc')}</span>
+      </div>
+    </div>
+
+    <aside class="hero-panel" aria-label="Profile summary">
+      <div class="hero-card">
+        <div class="hero-card-header">
+          <div>
+            <div class="hero-card-title">{t('hero.card.currently')}</div>
+            <div class="hero-card-name">{t('hero.card.name')}</div>
+            <div class="hero-card-role">{t('hero.card.role')}</div>
+          </div>
+          <div class="hero-card-country">{t('hero.card.location')}</div>
+        </div>
+        <div class="hero-card-tags">
+          <span class="tag">Kubernetes & Talos</span>
+          <span class="tag">DHIS2</span>
+          <span class="tag">CI/CD</span>
+          <span class="tag">Interopérabilité</span>
+          <span class="tag">IA & LLMs</span>
+        </div>
+        <div class="hero-card-footer">
+          <strong>{t('hero.card.impact')}</strong> {t('hero.card.impact.desc')}
+        </div>
+      </div>
+    </aside>
+  </section>
+
+  <section class="section" aria-labelledby="section-expertise">
+    <div class="section-header">
+      <h2 id="section-expertise" class="section-title">{t('section.expertise.title')}</h2>
+      <p class="section-subtitle">{t('section.expertise.subtitle')}</p>
+    </div>
+    <div class="card-grid">
+      <article class="card">
+        <h3 class="card-title">{t('expertise.dh.title')}</h3>
+        <p class="card-meta">
+          {t('expertise.dh.desc')}
+        </p>
+        <div class="card-tags">
+          <span class="tag">Stratégies nationales</span>
+          <span class="tag">Gouvernance</span>
+          <span class="tag">Renforcement des capacités</span>
+        </div>
+      </article>
+      <article class="card">
+        <h3 class="card-title">{t('expertise.devops.title')}</h3>
+        <p class="card-meta">
+          {t('expertise.devops.desc')}
+        </p>
+        <div class="card-tags">
+          <span class="tag">Kubernetes</span>
+          <span class="tag">Talos Linux</span>
+          <span class="tag">GitOps / CI/CD</span>
+        </div>
+      </article>
+      <article class="card">
+        <h3 class="card-title">{t('expertise.his.title')}</h3>
+        <p class="card-meta">
+          {t('expertise.his.desc')}
+        </p>
+        <div class="card-tags">
+          <span class="tag">DHIS2</span>
+          <span class="tag">Interopérabilité</span>
+          <span class="tag">Architecture d'entreprise</span>
+        </div>
+      </article>
+      <article class="card">
+        <h3 class="card-title">{t('expertise.ai.title')}</h3>
+        <p class="card-meta">
+          {t('expertise.ai.desc')}
+        </p>
+        <div class="card-tags">
+          <span class="tag">LLMs</span>
+          <span class="tag">Automation</span>
+          <span class="tag">Aide à la décision</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="section-highlight-roles">
+    <div class="section-header">
+      <h2 id="section-highlight-roles" class="section-title">{t('section.roles.title')}</h2>
+      <p class="section-subtitle">{t('section.roles.subtitle')}</p>
+    </div>
+    <div class="card-grid">
+      <article class="card">
+        <h3 class="card-title">{t('role.yalim.title')}</h3>
+        <p class="card-meta">{t('role.yalim.org')}</p>
+        <p class="card-meta">
+          {t('role.yalim.desc')}
+        </p>
+      </article>
+      <article class="card">
+        <h3 class="card-title">{t('role.hisp.title')}</h3>
+        <p class="card-meta">{t('role.hisp.org')}</p>
+        <p class="card-meta">
+          {t('role.hisp.desc')}
+        </p>
+      </article>
+      <article class="card">
+        <h3 class="card-title">{t('role.momentum.title')}</h3>
+        <p class="card-meta">{t('role.momentum.org')}</p>
+        <p class="card-meta">
+          {t('role.momentum.desc')}
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="section-key-skills">
+    <div class="section-header">
+      <h2 id="section-key-skills" class="section-title">{t('section.skills.title')}</h2>
+      <p class="section-subtitle">{t('section.skills.subtitle')}</p>
+    </div>
+    <div class="section-inline-list">
+      <span>Stratégie de santé numérique</span>
+      <span>Déploiement & optimisation DHIS2</span>
+      <span>Kubernetes & Talos Linux</span>
+      <span>DevOps & CI/CD</span>
+      <span>Interopérabilité des systèmes</span>
+      <span>Intégration IA & LLM locaux</span>
+      <span>Renforcement des capacités & mentorat</span>
+      <span>Analyse et visualisation avancées des données</span>
+    </div>
+  </section>
+
+  <section id="resume" class="section" aria-labelledby="section-resume">
+    <div class="section-header">
+      <h2 id="section-resume" class="section-title">{t('section.resume.title')}</h2>
+      <p class="section-subtitle">
+        {t('section.resume.subtitle')}
+      </p>
+    </div>
+    <div class="resume-section">
+      <Resume />
+    </div>
+  </section>
+</MainLayout>

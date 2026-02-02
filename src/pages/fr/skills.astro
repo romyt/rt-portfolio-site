@@ -1,0 +1,60 @@
+---
+import MainLayout from "../../layouts/MainLayout.astro";
+---
+
+<MainLayout currentPath="/fr/skills">
+  <section class="section">
+    <div class="section-header">
+      <h1 class="section-title">Compétences</h1>
+      <p class="section-subtitle">
+        Une vue condensée des capacités mises en évidence dans le CV.
+      </p>
+    </div>
+    <div class="card-grid">
+      <article class="card">
+        <h2 class="card-title">Santé numérique & leadership</h2>
+        <p class="card-meta">
+          Conception de programmes, gouvernance et coordination multi-acteurs pour les initiatives SIS nationales et One Health.
+        </p>
+        <div class="card-tags">
+          <span class="tag">Leadership de programmes</span>
+          <span class="tag">Engagement des parties prenantes</span>
+          <span class="tag">Renforcement des capacités</span>
+        </div>
+      </article>
+      <article class="card">
+        <h2 class="card-title">DevOps & infrastructure cloud</h2>
+        <p class="card-meta">
+          Clusters haute disponibilité, CI/CD, observabilité et opérations cloud sécurisées pour plateformes de données de santé.
+        </p>
+        <div class="card-tags">
+          <span class="tag">Kubernetes</span>
+          <span class="tag">Talos Linux</span>
+          <span class="tag">GitOps / CI/CD</span>
+        </div>
+      </article>
+      <article class="card">
+        <h2 class="card-title">Systèmes d'information de santé</h2>
+        <p class="card-meta">
+          Configuration, déploiement, optimisation DHIS2 et intégration avec d'autres systèmes.
+        </p>
+        <div class="card-tags">
+          <span class="tag">DHIS2</span>
+          <span class="tag">Interopérabilité</span>
+          <span class="tag">Architecture d'entreprise</span>
+        </div>
+      </article>
+      <article class="card">
+        <h2 class="card-title">IA & analytique avancée</h2>
+        <p class="card-meta">
+          Intégration de LLM locaux, bulletins automatisés et visualisation de données pour l'aide à la décision.
+        </p>
+        <div class="card-tags">
+          <span class="tag">LLMs</span>
+          <span class="tag">Visualisation de données</span>
+          <span class="tag">Automation</span>
+        </div>
+      </article>
+    </div>
+  </section>
+</MainLayout>

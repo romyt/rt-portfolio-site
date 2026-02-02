@@ -1,0 +1,20 @@
+{
+  "name": "portfolio-contact-api",
+  "version": "1.0.0",
+  "description": "Contact form API for portfolio site using Brevo",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "@getbrevo/brevo": "^2.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

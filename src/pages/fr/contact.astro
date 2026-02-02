@@ -1,22 +1,25 @@
 ---
-import MainLayout from "../layouts/MainLayout.astro";
+import MainLayout from "../../layouts/MainLayout.astro";
+import { useTranslations } from '../../i18n/ui';
+
+const t = useTranslations('fr');
 ---
 
-<MainLayout currentPath="/contact" title="Contact · Romain-Rolland F Tohouri">
+<MainLayout currentPath="/fr/contact">
   <section class="section">
     <div class="section-header">
-      <h1 class="section-title">Get in touch</h1>
+      <h1 class="section-title">Contactez-moi</h1>
       <p class="section-subtitle">
-        I am open to collaborations, consulting, and technical leadership opportunities.
-        Use the form below to send me a message.
+        Je suis ouvert aux collaborations, au conseil et aux opportunités de leadership technique.
+        Utilisez le formulaire ci-dessous pour m'envoyer un message.
       </p>
     </div>
     
     <div class="card contact-form-card">
-      <h2 class="card-title">Send me a message</h2>
+      <h2 class="card-title">Envoyez-moi un message</h2>
       <form id="contact-form" class="contact-form">
         <div class="form-group">
-          <label for="name">Name *</label>
+          <label for="name">Nom *</label>
           <input type="text" id="name" name="name" required />
         </div>
         
@@ -26,8 +29,8 @@ import MainLayout from "../layouts/MainLayout.astro";
         </div>
         
         <div class="form-group">
-          <label for="subject">Subject</label>
-          <input type="text" id="subject" name="subject" placeholder="Optional" />
+          <label for="subject">Objet</label>
+          <input type="text" id="subject" name="subject" placeholder="Optionnel" />
         </div>
         
         <div class="form-group">
@@ -35,27 +38,27 @@ import MainLayout from "../layouts/MainLayout.astro";
           <textarea id="message" name="message" rows="6" required></textarea>
         </div>
         
-        <button type="submit" class="submit-btn">Send Message</button>
+        <button type="submit" class="submit-btn">Envoyer le message</button>
         
         <div id="form-status" class="form-status"></div>
       </form>
     </div>
     
     <div class="card" style="margin-top: 1.2rem;">
-      <h2 class="card-title">Location & Time Zone</h2>
-      <p class="card-meta">Fairfax, VA · Eastern Time (US)</p>
+      <h2 class="card-title">Localisation et fuseau horaire</h2>
+      <p class="card-meta">Fairfax, VA · Heure de l'Est (États-Unis)</p>
     </div>
     
     <div class="card" style="margin-top: 1.2rem;">
-      <h2 class="card-title">Profiles</h2>
+      <h2 class="card-title">Profils</h2>
       <ul>
         <li>
           LinkedIn:
-          <a href="https://www.linkedin.com/in/tohouri/" target="_blank" rel="noreferrer">View LinkedIn profile</a>
+          <a href="https://www.linkedin.com/in/tohouri/" target="_blank" rel="noreferrer">Voir le profil LinkedIn</a>
         </li>
         <li>
           GitHub:
-          <a href="https://github.com/romyt" target="_blank" rel="noreferrer">View GitHub profile</a>
+          <a href="https://github.com/romyt" target="_blank" rel="noreferrer">Voir le profil GitHub</a>
         </li>
       </ul>
     </div>
@@ -159,7 +162,7 @@ import MainLayout from "../layouts/MainLayout.astro";
     
     // Disable button and show loading state
     submitBtn.disabled = true;
-    submitBtn.textContent = 'Sending...';
+    submitBtn.textContent = 'Envoi en cours...';
     statusDiv.className = 'form-status';
     statusDiv.style.display = 'none';
     
@@ -186,7 +189,7 @@ import MainLayout from "../layouts/MainLayout.astro";
       if (response.ok) {
         // Success
         statusDiv.className = 'form-status success';
-        statusDiv.textContent = result.message || 'Your message has been sent successfully!';
+        statusDiv.textContent = 'Votre message a été envoyé avec succès ! Je vous répondrai bientôt.';
         statusDiv.style.display = 'block';
         
         // Reset form
@@ -194,18 +197,18 @@ import MainLayout from "../layouts/MainLayout.astro";
       } else {
         // Error
         statusDiv.className = 'form-status error';
-        statusDiv.textContent = result.error || 'Failed to send message. Please try again.';
+        statusDiv.textContent = result.error || "Échec de l'envoi du message. Veuillez réessayer.";
         statusDiv.style.display = 'block';
       }
     } catch (error) {
       // Network error
       statusDiv.className = 'form-status error';
-      statusDiv.textContent = 'Network error. Please check your connection and try again.';
+      statusDiv.textContent = 'Erreur réseau. Veuillez vérifier votre connexion et réessayer.';
       statusDiv.style.display = 'block';
     } finally {
       // Re-enable button
       submitBtn.disabled = false;
-      submitBtn.textContent = 'Send Message';
+      submitBtn.textContent = 'Envoyer le message';
     }
   });
 </script>

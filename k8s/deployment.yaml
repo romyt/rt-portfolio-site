@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: portfolio-site
-          image: romyt/rt-portfolio-site:latest
+          image: romyt/rt-portfolio-site:v1.4
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 80

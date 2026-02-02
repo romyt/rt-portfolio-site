@@ -123,6 +123,37 @@ body {
   background: radial-gradient(circle at 0 0, rgba(148, 163, 184, 0.12), rgba(15, 23, 42, 0.9));
 }
 
+.lang-switcher {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid rgba(148, 163, 184, 0.6);
+  background: radial-gradient(circle at 0 0, rgba(148, 163, 184, 0.12), rgba(15, 23, 42, 0.9));
+}
+
+.lang-link {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.lang-link:hover {
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+.lang-link-active {
+  color: var(--accent);
+}
+
+.lang-divider {
+  color: rgba(148, 163, 184, 0.6);
+  font-size: 0.85rem;
+}
+
 .hero {
   display: grid;
   grid-template-columns: minmax(0, 3fr) minmax(0, 2.5fr);
