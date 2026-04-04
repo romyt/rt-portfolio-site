@@ -4,14 +4,14 @@ Fairfax VA
 USA
 
 **SUMMARY**  
-Digital health leader with 15+ years of international development experience across Africa, the United States, and the Caribbean. Skilled in health information systems strengthening, digital health strategy development, institutional capacity building, systems interoperability, artificial intelligence, and cybersecurity. Extensive expertise in managing the deployment and enhancement of open source-based health information, logistics, and electronic health record systems at the national level across eight countries. Proven ability to develop and implement innovative digital health solutions while fostering mentorship, multi-stakeholder collaboration, and delivering sustainable, impactful results. Strong communication, teamwork, and project management skills.
+Digital health leader with 15+ years of international development experience across Africa, the United States, and the Caribbean. Skilled in health information systems strengthening, digital health strategy development, institutional capacity building, systems interoperability, artificial intelligence, and cybersecurity. Extensive expertise in managing the deployment and enhancement of open source-based health information, logistics, and electronic health record systems at the national level across nine countries. Proven ability to develop and implement innovative digital health solutions while fostering mentorship, multi-stakeholder collaboration, and delivering sustainable, impactful results. Strong communication, teamwork, and project management skills.
 
 **SKILLS**
 
 * Public Health Projects/Programs Leadership and Management  
 * Health Information Systems Development and Information System Security  
 * Digital Health Strategy Development and Stakeholder Engagement and Collaboration  
-* AI and Local LLM (Large Language Models) Integration  
+* Information Systems Interoperability, AI and Local LLM (Large Language Models) Integration  
 * DevOps Engineering / DHIS2 (District Health Information Software 2) and other open soucre health information systems deployment and dptimization
 * Capacity Building and Knowledge Transfer  
 * Advanced Data Analysis and Visualization
@@ -33,6 +33,12 @@ YaLIM LLC _(yalim.org)_ | Fairfax, Virginia 09/01/2022 — Present
 * Deployed a Talos Linux based high availability production-grade cluster using Kubernetes, hosting 7 scalable routine health information systems (HIS) and a national disease surveillance information systems in the cloud and on premise  
 * Developed and deployed the “YaLIM cloud” software as service electronic platform (yalim.cloud or dhis2.cloud)   
 * Created AI-powered DHIS2 bulletins and dashboards for efficient health information sharing.
+
+**WHO Consultant**
+WHO Afro | Malabo, Equatorial Guinea | 02/2026 — 05/2026 
+- National implementation and digitization of Universal Health Coverage in Equatorial Guinea
+* Design Enterprise Architecture of the National Universal Health Coverage 
+* Digital solution identification and implementation
 
 **Lead Architect**  
 MOMENTUM Knowledge Accelerator (MKA) | Arlington, VA | 01/2022 — 05/2025 _($30-million USAID cooperative agreement)_ 

@@ -4,27 +4,27 @@ Fairfax VA
 USA
 
 **RÉSUMÉ**  
-Leader en santé numérique avec plus de 15 ans d'expérience en développement international à travers l'Afrique, les États-Unis et les Caraïbes. Compétent en renforcement des systèmes d'information de santé, développement de stratégies de santé numérique, renforcement des capacités institutionnelles, interopérabilité des systèmes, intelligence artificielle et cybersécurité. Expertise approfondie dans la gestion du déploiement et de l'amélioration de systèmes d'information de santé, logistiques et de dossiers de santé électroniques basés sur les logiciels libres à l'échelle nationale dans huit pays. Capacité avérée à développer et mettre en œuvre des solutions innovantes de santé numérique tout en favorisant le mentorat, la collaboration multipartite et l'obtention de résultats durables et impactants. Excellentes aptitudes à la communication, au travail d'équipe et à la gestion de projet.
+Leader en santé numérique avec plus de 15 ans d'expérience en développement international en Afrique, aux États-Unis et dans les Caraïbes. Expertise dans le renforcement des systèmes d'information sanitaire, l'élaboration de stratégies de santé numérique, le renforcement des capacités institutionnelles, l'interopérabilité des systèmes, l'intelligence artificielle et la cybersécurité. Vaste expérience dans la gestion du déploiement et de l'amélioration de systèmes d'information sanitaire, de logistique et de dossiers de santé électroniques basés sur des logiciels libres au niveau national dans neuf pays. Capacité avérée à développer et mettre en œuvre des solutions de santé numérique innovantes tout en favorisant le mentorat, la collaboration multipartite et en produisant des résultats durables et percutants. Solides compétences en communication, travail d'équipe et gestion de projet.
 
 **COMPÉTENCES**
 
-* Leadership et Gestion de Projets/Programmes de Santé Publique  
-* Développement de Systèmes d'Information de Santé et Sécurité des Systèmes d'Information  
-* Développement de Stratégies de Santé Numérique, Engagement et Collaboration des Parties Prenantes  
-* Intégration de l'IA et des LLM Locaux (Large Modèles de Langage)  
-* Ingénierie DevOps / Déploiement et Optimisation de DHIS2 (District Health Information Software 2) et autres logiciels libre d'information sanitaire
-* Renforcement des Capacités et Transfert de Connaissances  
-* Analyse et Visualisation Avancées de Données
+* Leadership et gestion de projets/programmes de santé publique
+* Développement de systèmes d'information sanitaire et sécurité des systèmes d'information (SI)
+* Élaboration de stratégies de santé numérique, engagement et collaboration des parties prenantes
+* Interopérabilité des SI, Intelligence Artificielle (IA) et intégration de modèles de langage locaux (LLM)
+* Ingénierie DevOps et déploiement et optimisation de DHIS2 (District Health Information Software 2)
+* Renforcement des capacités et transfert de connaissances
+Analyse et visualisation avancées de données.
 
 **HISTORIQUE PROFESSIONNEL**
 
 **Président du Conseil d’ Administration**  
-HISP Côte d'Ivoire | Abidjan, Côte d’Ivoire| 01/2015 — Present _(CA: ~ $600,000 -$1,000,000)_
+HISP Côte d'Ivoire | Abidjan, Côte d’Ivoire| 01/2015 — Present - Budget Annuel _(~ $600,000 -$1,000,000 )_
 - Direction des efforts de renforcement du système de santé national en Côte d'Ivoire.
 
-* Fournir leadership et orientation au Ministère de la Santé (MOH) de Côte d'Ivoire.  
-* Gestion des équipes et opérations HISP-CI (Health Information System Program Cote d'Ivoire).
-* Supervision des activités de santé numérique financées par le Fonds Mondial pour le MOH.
+* Fournir leadership et support au ministère de la Santé de Côte d’Ivoire (CI).  
+* Gestion  des équipes et opérations techniques de HISP-CI (Health Information System Program CI).
+* Supervision des activités de santé numérique financées par le Fonds mondial.
 
 **Manager et Ingénieur DevOps Principal**  
 YaLIM LLC _(yalim.org)_ | Fairfax, Virginie | 01/09/2022 — Présent  
@@ -33,6 +33,13 @@ YaLIM LLC _(yalim.org)_ | Fairfax, Virginie | 01/09/2022 — Présent
 * Déploiement dans le cloud et sur site de cluster de production haute disponibilité basé sur Talos Linux et Kubernetes, hébergeant plus de 7 systèmes d'information sanitaire de routine (SISR) évolutifs et un système national de surveillance des maladies.  
 * Développement et déploiement de la plateforme électronique logicielle en tant que service "YaLIM cloud" (yalim.cloud ou dhis2.cloud)
 * Création de bulletins et tableaux de bord DHIS2 alimentés des agents IA pour un partage efficace d'informations de santé.
+
+**Consultant OMS**
+OMS Afrique | Malabo, Guinée équatoriale | 02/2026 — 05/2026
+- Mise en œuvre nationale et numérisation de la Couverture Sanitaire Universelle en Guinée équatoriale
+
+* Conception de l'Architecture d'Entreprise de la Couverture Sanitaire Universelle Nationale
+* Identification et mise en œuvre de solutions numériques
 
 **Architecte Principal**  
 MOMENTUM Knowledge Accelerator (MKA) | Arlington, VA | 01/2022 — 05/2025 _(Accord de coopération USAID de 30 millions de dollars)_ 

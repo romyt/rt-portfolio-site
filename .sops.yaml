@@ -1,0 +1,7 @@
+---
+# SOPS Configuration for portfolio-site
+# Age public key matches the sops-age secret in flux-system namespace
+creation_rules:
+  - path_regex: .*.sops.ya?ml$
+    encrypted_regex: ^(data|stringData)$
+    age: age1229yll8w7j8n4fmvahud4e76avdk3rd5jfzxuepuu7pa7jf3mgqqrq8ptt
