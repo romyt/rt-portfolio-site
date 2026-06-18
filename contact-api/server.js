@@ -1,7 +1,7 @@
 import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
-import * as Brevo from '@getbrevo/brevo';
+import { BrevoClient } from '@getbrevo/brevo';
 
 dotenv.config();
 
@@ -16,9 +16,10 @@ app.use(cors({
 }));
 app.use(express.json());
 
-// Initialize Brevo API
-const apiInstance = new Brevo.TransactionalEmailsApi();
-apiInstance.setApiKey(Brevo.TransactionalEmailsApiApiKeys.apiKey, process.env.BREVO_API_KEY);
+// Initialize Brevo API v6
+const brevo = new BrevoClient({
+  apiKey: process.env.BREVO_API_KEY
+});
 
 // Validation helper
 function validateEmail(email) {
@@ -52,26 +53,22 @@ app.post('/api/contact', async (req, res) => {
   // In production, use Redis or similar for distributed rate limiting
   
   try {
-    // Prepare email data
-    const sendSmtpEmail = new Brevo.SendSmtpEmail();
-    
-    sendSmtpEmail.sender = {
-      name: process.env.FROM_NAME || 'Portfolio Contact',
-      email: process.env.FROM_EMAIL || 'no-reply@tohouri.com'
-    };
-    
-    sendSmtpEmail.to = [{
-      email: process.env.TO_EMAIL || 'romain@tohouri.com',
-      name: process.env.TO_NAME || 'Romain Tohouri'
-    }];
-    
-    sendSmtpEmail.subject = subject || `New Contact Form Submission from ${name}`;
-    sendSmtpEmail.replyTo = {
-      email: email,
-      name: name
-    };
-    
-    sendSmtpEmail.htmlContent = `
+    // Prepare email data using Brevo v6 API
+    const emailData = {
+      sender: {
+        name: process.env.FROM_NAME || 'Portfolio Contact',
+        email: process.env.FROM_EMAIL || 'no-reply@tohouri.com'
+      },
+      to: [{
+        email: process.env.TO_EMAIL || 'romain@tohouri.com',
+        name: process.env.TO_NAME || 'Romain Tohouri'
+      }],
+      subject: subject || `New Contact Form Submission from ${name}`,
+      replyTo: {
+        email: email,
+        name: name
+      },
+      htmlContent: `
 <!DOCTYPE html>
 <html>
 <head>
@@ -113,9 +110,8 @@ app.post('/api/contact', async (req, res) => {
         </div>
     </div>
 </body>
-</html>`;
-    
-    sendSmtpEmail.textContent = `
+</html>`,
+      textContent: `
 New Contact Form Submission
 
 From: ${name}
@@ -127,10 +123,11 @@ ${message}
 ---
 This message was sent via the contact form on tohouri.com
 Received at: ${new Date().toLocaleString('en-US', { timeZone: 'America/New_York' })} EST
-`;
+`
+    };
 
-    // Send email via Brevo
-    const data = await apiInstance.sendTransacEmail(sendSmtpEmail);
+    // Send email via Brevo v6 API
+    const data = await brevo.transactionalEmails.sendTransacEmail(emailData);
     
     console.log(`[${new Date().toISOString()}] Contact form email sent successfully.`);
     console.log(`[DEBUG] Brevo API response:`, JSON.stringify(data, null, 2));
