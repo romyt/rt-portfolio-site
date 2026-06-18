@@ -1,7 +1,10 @@
 # Stage 1: build the static Astro site
-FROM node:20-alpine AS builder
+FROM node:22-alpine AS builder
 
 WORKDIR /app
+
+# Update Alpine packages to patch CVEs
+RUN apk update && apk upgrade --no-cache
 
 COPY package.json package-lock.json* .npmrc* ./
 
@@ -12,7 +15,10 @@ COPY . .
 RUN npm run build
 
 # Stage 2: serve static files with Nginx
-FROM nginx:1.27-alpine AS runner
+FROM nginx:1.29-alpine AS runner
+
+# Update Alpine packages to patch CVEs (OpenSSL 3.3.7+)
+RUN apk update && apk upgrade --no-cache
 
 COPY --from=builder /app/dist /usr/share/nginx/html
 
